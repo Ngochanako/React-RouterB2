@@ -12,6 +12,10 @@ import Login from './pages/Login'
 import TeamIndex from './pages/TeamIndex'
 import Teams from './pages/Teams'
 import Team from './pages/Team'
+import PrivateRouterB8 from './pages/PrivateRouterB8'
+import AdminIndex from './pages/AdminIndex'
+import Products from './pages/Products'
+import Order from './pages/Order'
 export default function App() {
   return (
     <div>
@@ -28,6 +32,12 @@ export default function App() {
         <Route path='/teams' element={<Teams/>}>
             <Route index element={<TeamIndex/>}/>
             <Route path=':teamId' element={<Team/>}/>
+        </Route>
+        <Route path='/admin'element={<PrivateRouterB8/>}>
+            <Route index element={<AdminIndex/>}/>
+            <Route path="account" element={<Account />} />
+            <Route path="product" element={<Products />} />
+            <Route path="order" element={<Order />} />
         </Route>
       </Routes>
     </div>

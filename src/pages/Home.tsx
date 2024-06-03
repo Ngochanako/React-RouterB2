@@ -18,6 +18,8 @@ export default function Home() {
       <Link to={'/login'} className='link'>Login</Link>
       <p>Bài 7</p>
       <Link to={'/teams'} className='link'>Teams</Link>
+      <p>Bài 8</p>
+      <Link to={'/admin'} className='link'>Bài 8</Link>
     </div>
   )
 }
