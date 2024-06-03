@@ -14,6 +14,10 @@ export default function Home() {
       <Link to={'/employee'} className='link'>Employee</Link>
       <p>Bài 5</p>
       <Link to={'/account'} className='link'>Private router</Link>
+      <p>Bài 6</p>
+      <Link to={'/login'} className='link'>Login</Link>
+      <p>Bài 7</p>
+      <Link to={'/teams'} className='link'>Teams</Link>
     </div>
   )
 }
